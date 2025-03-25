@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/vite-template/",
   plugins: [react()],
   define: {
     // 提供 global 的 polyfill
@@ -17,4 +18,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ["buffer"],
   },
-})
+});
